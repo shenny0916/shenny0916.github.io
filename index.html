@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isla</title>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/present-162-1111809.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+  @media only screen and (min-width:1280px) and (max-width: 1240px) {
+  a#b2{
+    right: 34%;
+    top: 60%;
+  }
+
+  a#b1{
+    right: 36%;
+    top: 40%;
+  }
+  }
+
+  @media only screen and (min-width: 1326px){
+    h1#title{
+      font-size: 420px;
+    }
+
+    a#b2{
+      font-size: 150px;
+      right: 34%;
+      top: 80%;
+    }
+
+    a#b1{
+      font-size: 150px;
+    right: 36%;
+    top: 50%;
+    }
+
+    button#news:hover{
+    font-size: 202px;
+  }
+
+  button#home_bt:hover{
+    font-size: 202px;
+  }
+
+  button#comments_bt:hover{
+    font-size: 110px;
+  }
+
+  button#news{
+  top: 65px;
+  right: 1px;
+  font-size: 200px;
+  }
+
+  button#home_bt{
+  top: 250px;
+  right: 1px;
+  font-size: 200px;
+  }
+
+  button#comments_bt{
+  top: 455px;
+  right: 1px;
+  font-size: 108px;
+  }
+  }
+
+  @media only screen and (max-width: 800px) {
+    div#news1 img.card-img-top{
+    border-radius: 50%;
+    width: 19%;
+    height: 19%;
+    z-index: 4;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+  }
+
+  div#news1{
+    top: 10000%;
+    right: 5%;
+    position: absolute;
+  }
+
+  h1#title{
+    color:  white;
+    font-size: 250px;
+    font-weight: 600;
+  }
+
+  div#news1 div.card-body h5.card-title{
+    top: 85%;
+    font-size: 25px;
+    color: #3b4146;
+  }
+
+  div#profile_card div.card-body h1.card-title{
+    font-size: 60px;
+    top: 6%;
+    left: 50%;
+    position: absolute;
+    z-index: 11;
+    color: white;
+}
+
+  div#news1 div.card-body p#content{
+    top: 10px;
+    left: 24%;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    z-index: 2;
+ }
+
+  a#b2{
+    right: 29%;
+    top: 100%;
+  }
+
+  a#b1{
+    right: 36%;
+    top: 80%;
+  }
+
+  button#news:hover{
+    font-size: 62px;
+  }
+
+  button#home_bt:hover{
+    font-size: 62px;
+  }
+
+  button#comments_bt:hover{
+    font-size: 40px;
+  }
+
+  button#news{
+  top: 65px;
+  right: 1px;
+  font-size: 60px;
+}
+
+button#home_bt{
+  top: 150px;
+  right: 1px;
+  font-size: 60px;
+}
+
+button#comments_bt{
+  top: 255px;
+  right: 1px;
+  font-size: 38px;
+}
+}
+
+@media only screen and (max-width: 800px){
+  h1#title{
+    font-size: 190px;
+    top: 20px;
+  }
+
+  div.uPborder{
+    width: 100%;
+  }
+
+  a#b2{
+    right: 29%;
+    top: 70%;
+  }
+
+  a#b1{
+    right: 36%;
+    top: 50%;
+  }
+
+  div.dowNborder{
+    top: 120%;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body>
+  <meta name="description" content="A bot based on the anime character Isla from plastic memories,with over 100 commands to use.">
+  <meta property="og:image" content="https://media.discordapp.net/attachments/717575924568293408/783327593729884160/isla.jpg">
+  <meta name="keywords" content="Isla Bot">
+
+  <div class="uPborder"></div>
+
+  <div id="snowflakeContainer">
+    <span class="snowflake"></span>
+  </div>
+
+  <div id="menu"></div>
+
+  <button onclick="menu()" id="menu_btn">...</button>
+
+  <div onclick="menu2()" id="menu_bt2"></div>
+
+  <div id="menu_bt">
+    <button onclick="news()" id="news">News</button>
+    <button onclick="home()" id="home_bt">Home</button>
+    <button onclick="comment()" id="comments_bt">Comments</button>
+  </div>
+
+  <div id="profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" id="profile_card">
+            <div class="bg" id="bg"></div>
+
+            <img class="card-img-top" src="https://images-ext-1.discordapp.net/external/56hayTPXPb_bCYVtM1xBaOQ7HngtBQXPNFH5IiTSYso/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/625305547629133825/a_d394885eef8cefcaa063dafec29ce4f0.gif" alt="Card image cap" id="pfp">
+
+            <div class="card-body">
+              <h1 class="card-title" onclick="profile2()">Ivann</h1>
+              <p id="status">Da owner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="new">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" id="news1">
+            <img class="card-img-top" src="https://images-ext-1.discordapp.net/external/56hayTPXPb_bCYVtM1xBaOQ7HngtBQXPNFH5IiTSYso/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/625305547629133825/a_d394885eef8cefcaa063dafec29ce4f0.gif" alt="Card image cap" id="pfp">
+
+            <div class="card-body">
+              <h5 class="card-title" onclick="profile()">-Ivann</h5>
+              <div id="inner-box"></div>
+              <p id="content">Added a new starboard feature</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="home">
+    <h1 id="title">Isla</h1>
+
+    <a href="https://discord.com/oauth2/authorize?client_id=724289228686753844&scope=bot&permissions=37785" class="button" id="b1">Invite</a>
+
+    <a href="https://discord.gg/MatHjVt" class="button" id="b2">Server</a>
+
+  </div>
+
+  <div id="comments">
+    <div id="disqus_thread"></div>
+  </div>
+
+  <div class="dowNborder" id="dowNborder"></div>
+</body>
+
+<script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+  var disqus_config = function () {
+  this.page.url = "https://islabot.tk";  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = "home_comment"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://isla-bot.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script>
+  function profile2(){
+    console.log('e')
+    if(document.getElementById('new').style.visibility === 'hidden'){
+      return console.log('e')
+    } else {
+      console.log("a")
+      document.getElementById('profile_card').style.visibility = 'hidden'
+
+      document.getElementById('news1').style.visibility = 'visible'
+    }
+  }
+
+  function profile(){
+    if(document.getElementById('new').style.visibility === 'hidden'){
+      return;
+    } else {
+      document.getElementById('profile_card').style.visibility = 'visible'
+
+      document.getElementById('news1').style.visibility = 'hidden'
+    }
+  }
+
+  function menu(){
+    if(document.getElementById('menu').style.visibility === 'hidden'){
+      document.getElementById('menu_bt').style.visibility = 'visible'
+
+      document.getElementById('menu').style.visibility = 'visible'
+    } else {
+      document.getElementById('menu_bt').style.visibility = 'hidden'
+
+      document.getElementById('menu').style.visibility = 'hidden'
+    }
+  }
+
+  function menu2(){
+    if(document.getElementById('menu').style.visibility === 'hidden'){
+      return;
+    } else {
+      document.getElementById('menu_bt').style.visibility = 'hidden'
+
+      document.getElementById('menu').style.visibility = 'hidden'
+    }
+  }
+
+  function news(){
+
+    if(document.getElementById('profile_card').style.visibility === 'visible'){
+      document.getElementById('profile_card').style.visibility = 'hidden'
+    }
+
+      document.getElementById('home').style.visibility = 'hidden'
+      document.getElementById('comments').style.visibility = 'hidden'
+
+      document.body.style.backgroundImage = 'url(https://i.imgur.com/eS4IxK3.png)'
+      document.getElementById('dowNborder').style.top = '120%'
+
+      document.getElementById('news1').style.visibility = 'visible'
+
+      document.getElementById('news').style.color = '#4a8f62'
+
+      document.getElementById('home_bt').style.color = 'white'
+      document.getElementById('comments_bt').style.color = 'white'
+
+
+      document.getElementById('dowNborder').style.visibility = 'visible'
+      document.getElementById('menu').style.height =  '120%'
+  }
+
+  function home(){
+
+    if(document.getElementById('profile_card').style.visibility === 'visible'){
+      document.getElementById('profile_card').style.visibility = 'hidden'
+    }
+
+      document.getElementById('news1').style.visibility = 'hidden'
+      document.getElementById('comments').style.visibility = 'hidden'
+
+      document.getElementById('home').style.visibility = 'visible'
+
+      document.getElementById('dowNborder').style.top = '110%'
+      document.getElementById('dowNborder').style.visibility = 'visible'
+
+      document.body.style.backgroundImage = 'url(https://www.itl.cat/pngfile/big/42-421014_hd-wallpaper-anime-girl-christmas-night.jpghttps://www.itl.cat/pngfile/big/42-421014_hd-wallpaper-anime-girl-christmas-night.jpg)'
+
+      document.getElementById('home_bt').style.color = '#4a8f62'
+
+      document.getElementById('comments_bt').style.color = 'white'
+      document.getElementById('news').style.color = 'white'
+
+      document.getElementById('menu').style.height =  '110%'
+  }
+
+  function comment(){
+
+    if(document.getElementById('profile_card').style.visibility === 'visible'){
+      document.getElementById('profile_card').style.visibility = 'hidden'
+    }
+
+      document.getElementById('news1').style.visibility = 'hidden'
+      document.getElementById('home').style.visibility = 'hidden'
+
+      document.getElementById('comments').style.visibility = 'visible'
+
+      document.body.style.backgroundImage = 'url()'
+      document.body.style.backgroundColor = '#e5e5e5'
+
+      document.getElementById('dowNborder').style.visibility = 'hidden'
+      document.getElementById('dowNborder').style.top = '0%'
+
+      document.getElementById('comments_bt').style.color = '#4a8f62'
+
+      document.getElementById('home_bt').style.color = 'white'
+      document.getElementById('news').style.color = 'white'
+
+      document.getElementById('menu').style.height =  '120%'
+
+  }
+</script>
+<script>
+  // Array to store our Snowflake objects
+  var snowflakes = [];
+
+  // Global variables to store our browser's window size
+  var browserWidth;
+  var browserHeight;
+
+  // Specify the number of snowflakes you want visible
+  var numberOfSnowflakes = 20;
+
+  // Flag to reset the position of the snowflakes
+  var resetPosition = false;
+
+  // Handle accessibility
+  var enableAnimations = false;
+  var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
+
+  // Handle animation accessibility preferences
+  function setAccessibilityState() {
+    if (reduceMotionQuery.matches) {
+      enableAnimations = false;
+    } else {
+      enableAnimations = true;
+    }
+  }
+  setAccessibilityState();
+
+  reduceMotionQuery.addListener(setAccessibilityState);
+
+  //
+  // It all starts here...
+  //
+  function setup() {
+    if (enableAnimations) {
+      window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
+      window.addEventListener("resize", setResetFlag, false);
+    }
+  }
+  setup();
+
+  //
+  // Constructor for our Snowflake object
+  //
+  function Snowflake(element, speed, xPos, yPos) {
+    // set initial snowflake properties
+    this.element = element;
+    this.speed = speed;
+    this.xPos = xPos;
+    this.yPos = yPos;
+    this.scale = 1;
+
+    // declare variables used for snowflake's motion
+    this.counter = 0;
+    this.sign = Math.random() < 0.5 ? 1 : -1;
+
+    // setting an initial opacity and size for our snowflake
+    this.element.style.opacity = (.1 + Math.random()) / 3;
+  }
+
+  //
+  // The function responsible for actually moving our snowflake
+  //
+  Snowflake.prototype.update = function () {
+    // using some trigonometry to determine our x and y position
+    this.counter += this.speed / 5000;
+    this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
+    this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
+    this.scale = .5 + Math.abs(10 * Math.cos(this.counter) / 20);
+
+    // setting our snowflake's position
+    setTransform(Math.round(this.xPos), Math.round(this.yPos), this.scale, this.element);
+
+    // if snowflake goes below the browser window, move it back to the top
+    if (this.yPos > browserHeight) {
+      this.yPos = -50;
+    }
+  }
+
+  //
+  // A performant way to set your snowflake's position and size
+  //
+  function setTransform(xPos, yPos, scale, el) {
+    el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0) scale(${scale}, ${scale})`;
+  }
+
+  //
+  // The function responsible for creating the snowflake
+  //
+  function generateSnowflakes() {
+
+    // get our snowflake element from the DOM and store it
+    var originalSnowflake = document.querySelector(".snowflake");
+
+    // access our snowflake element's parent container
+    var snowflakeContainer = originalSnowflake.parentNode;
+    snowflakeContainer.style.display = "block";
+
+    // get our browser's size
+    browserWidth = document.documentElement.clientWidth;
+    browserHeight = document.documentElement.clientHeight;
+
+    // create each individual snowflake
+    for (var i = 0; i < numberOfSnowflakes; i++) {
+
+      // clone our original snowflake and add it to snowflakeContainer
+      var snowflakeClone = originalSnowflake.cloneNode(true);
+      snowflakeContainer.appendChild(snowflakeClone);
+
+      // set our snowflake's initial position and related properties
+      var initialXPos = getPosition(50, browserWidth);
+      var initialYPos = getPosition(50, browserHeight);
+      var speed = 100 + Math.random() * 40; //the speed
+
+      // create our Snowflake object
+      var snowflakeObject = new Snowflake(snowflakeClone,
+        speed,
+        initialXPos,
+        initialYPos);
+      snowflakes.push(snowflakeObject);
+    }
+
+    // remove the original snowflake because we no longer need it visible
+    snowflakeContainer.removeChild(originalSnowflake);
+
+    moveSnowflakes();
+  }
+
+  //
+  // Responsible for moving each snowflake by calling its update function
+  //
+  function moveSnowflakes() {
+
+    if (enableAnimations) {
+      for (var i = 0; i < snowflakes.length; i++) {
+        var snowflake = snowflakes[i];
+        snowflake.update();
+      }
+    }
+
+    // Reset the position of all the snowflakes to a new value
+    if (resetPosition) {
+      browserWidth = document.documentElement.clientWidth;
+      browserHeight = document.documentElement.clientHeight;
+
+      for (var i = 0; i < snowflakes.length; i++) {
+        var snowflake = snowflakes[i];
+
+        snowflake.xPos = getPosition(50, browserWidth);
+        snowflake.yPos = getPosition(50, browserHeight);
+      }
+
+      resetPosition = false;
+    }
+
+    requestAnimationFrame(moveSnowflakes);
+  }
+
+  //
+  // This function returns a number between (maximum - offset) and (maximum + offset)
+  //
+  function getPosition(offset, size) {
+    return Math.round(-1 * offset + Math.random() * (size + 2 * offset));
+  }
+
+  //
+  // Trigger a reset of all the snowflakes' positions
+  //
+  function setResetFlag(e) {
+    resetPosition = true;
+  }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>

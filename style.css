@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* background-color: black; */
+    background-image: url('https://www.itl.cat/pngfile/big/42-421014_hd-wallpaper-anime-girl-christmas-night.jpghttps://www.itl.cat/pngfile/big/42-421014_hd-wallpaper-anime-girl-christmas-night.jpg');
+}
+
+div.uPborder{
+    top: 0px;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+}
+
+h1#title{
+    position: relative;
+    z-index: 9;
+    color: white;
+    font-size: 300px;
+    text-shadow: -1px 5px black;
+    text-align: center;
+    align-items: center;
+    font-weight: 100;
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+    background-color: #ffff;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+.dowNborder{
+    top: 110%;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: rgb(14, 14, 14);
+    opacity: 0.5;
+}
+
+a#b1:hover {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 1);
+    opacity: 1;
+}
+
+a#b2:hover {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 1);
+    opacity: 1;
+}
+
+a#b2{
+    z-index: 11;
+    right: 42%;
+    top: 80%;
+    position: absolute;
+    font-size: 70px;
+    color: white;
+}
+
+a#b1{
+    z-index: 11;
+    right: 44%;
+    top: 60%;
+    position: absolute;
+    font-size: 70px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+div#menu_bt{
+    visibility: hidden;
+}
+
+div#menu_bt2{
+    z-index: 10;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: transparent;
+}
+
+div#menu{
+    background-color: black;
+    width: 40%;
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    z-index: 111;
+    visibility: hidden;
+}
+
+button#menu_btn:hover{
+    color: grey;
+}
+
+button#menu_btn{
+    height: 200px;
+    outline: none;
+    position: absolute;
+    top: -120px;
+    right: 1px;
+    font-size: 150px;
+    z-index: 1111;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button#news:hover{
+    font-size: 105px;
+}
+
+button#home_bt:hover{
+    font-size: 105px;
+}
+
+button#comments_bt:hover{
+    font-size: 65px;
+}
+
+button#news{
+    outline: none;
+    position: absolute;
+    top: 65px;
+    right: 1px;
+    font-size: 100px;
+    z-index: 1111;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button#home_bt{
+    outline: none;
+    position: absolute;
+    top: 190px;
+    right: 1px;
+    font-size: 100px;
+    z-index: 1111;
+    color: #4a8f62;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button#comments_bt{
+    outline: none;
+    position: absolute;
+    top: 355px;
+    right: 1px;
+    font-size: 60px;
+    z-index: 1111;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+div.bg{
+    top: 65%;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: 0;
+    background-color: white;
+}
+
+#disqus_thread{
+    z-index: 1;
+}
+
+div#comments{
+    visibility: hidden;
+}
+
+/* cards */
+div#news1{
+    visibility: hidden;
+    z-index: 10;
+    top: 9000%;
+    right: 5%;
+    position: absolute;
+}
+
+div#news1{
+    background-color: #2c2f33;
+    height: 40000%;
+    width: 85%;
+    z-index: 0;
+    border-radius: 4px;
+}
+
+div#news1 img.card-img-top{
+    border-radius: 50%;
+    /* width: 20%;
+    height: 50%; */
+    z-index: 4;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+
+div#news1 div.card-body h5.card-title{
+    font-size: 70px;
+    right: 2%;
+    top: 75%;
+    position: absolute;
+    z-index: 2;
+    color: #3b4146;
+}
+
+div#news1 div.card-body div#inner-box{
+    border-radius: 10px;
+    height: 380px;
+    width: 78%;
+    top: 10px;
+    position: absolute;
+    background-color: #23272a;
+    z-index: 1;
+    left: 21%;
+}
+
+div#news1 div.card-body p#content{
+    font-family: Arial, Helvetica, sans-serif;
+    top: 10px;
+    left: 24%;
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    z-index: 2;
+}
+
+/* Profile */
+
+div#profile_card{
+    z-index: 11;
+    right: 7%;
+    visibility: hidden;
+    top: 7000%;
+    position: absolute;
+    background-color: #2c2f33;
+    height: 50000%;
+    width: 85%;
+    border-radius: 10px;
+    z-index: -1;
+    box-shadow: 0px 5px 18px black;
+}
+
+div#profile_card img#pfp{
+    border-radius: 50%;
+    z-index: 1111;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+div#profile_card div.bg{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(24, 23, 23);
+    top: 0%;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0px 2px 18px black;
+}
+
+div#profile_card div.card-body h1.card-title{
+    font-size: 100px;
+    z-index: 11;
+    top: 2%;
+    left: 25%;
+    position: absolute;
+    color: white;
+}
+
+div#profile_card div.card-body p#status{
+    color: white;
+    font-size: 50px;
+}

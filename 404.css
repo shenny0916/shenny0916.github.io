@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+    text-decoration: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url('https://www.itl.cat/pngfile/big/42-421014_hd-wallpaper-anime-girl-christmas-night.jpghttps://www.itl.cat/pngfile/big/42-421014_hd-wallpaper-anime-girl-christmas-night.jpg');
+}
+
+div.uPborder{
+    top: 0px;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+}
+
+h1.title{
+    position: relative;
+    z-index: 11;
+    color: pink;
+    font-size: 200px;
+    text-shadow: -5px 5px rgb(250, 128, 148);
+    text-align: center;
+    align-items: center;
+}
+
+h1#title-mini{
+    top: 10%;
+    font-size: 50px;
+    position: relative;
+    z-index: 11;
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px 5px black;
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+    background-color: #ffff;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+.dowNborder{
+    top: 140%;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: rgb(14, 14, 14);
+    opacity: 0.5;
+}
+
+a#b1:hover {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 1);
+    opacity: 1;
+}
+
+a#b2:hover {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 1);
+    opacity: 1;
+}
+
+a#b2{
+    right: 42%;
+    top: 80%;
+    position: absolute;
+    font-size: 70px;
+    color: white;
+}
+
+a#b1{
+    right: 44%;
+    top: 80%;
+    position: absolute;
+    font-size: 70px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
