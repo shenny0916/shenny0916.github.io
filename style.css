@@ -6,11 +6,14 @@
     text-decoration: none;
 }
 
-body,html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #23272a;
+html,body{
+  background-color: #23272a;
+  height: 100%;
+}
+
+.fill_page{
+  height: 300%;
+  background-color: #23272a;
 }
 
 @font-face {
@@ -82,7 +85,7 @@ a#b1{
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .desc{
@@ -121,46 +124,78 @@ a{
     to   {left: 2.5%;}
 }
 
+.servers{
+  width: 95%;
+  left: 2.5%;
+  height: 50%;
+  top: 200%;
+  position: absolute;
+}
 
-@media only screen and (max-width: 800px) {
+.servers div img{
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 0;
 
-    img#pfp{
-     right: 27%;
-     top: 2%;
-    }
+  width: 300px;
+  height: 300px;
+}
 
-    a#b2{
-      right: 25%;
-      top: 100%;
-    }
+.servers div a{
+  font-size: 40px;
+  position: absolute;
+  top: 300px;
+  text-decoration: none;
+  left: 110px;
+  color: white;
+}
 
-    a#b1{
-      right: 32%;
-      top: 80%;
-    }
+.servers a:hover{
+  color: grey;
+}
+
+div#plamemo{
+  right: 41%;
+  position: absolute;
+  top: 70%;
+}
+
+@media only screen and (max-width: 800px){
+   img#pfp{
+     right: 18%;
+   }
+
+   a#b2{
+    right: 22%;
+    top: 75%;
   }
 
-  @media only screen and (max-width: 800px){
-    h1#title{
-      font-size: 190px;
-      top: 20px;
-    }
-
-    div.uPborder{
-      width: 100%;
-    }
-
-    a#b2{
-      right: 29%;
-      top: 70%;
-    }
-
-    a#b1{
-      right: 36%;
-      top: 50%;
-    }
-
-    div.dowNborder{
-      top: 120%;
-    }
+  a#b1{
+    right: 28%;
+    top: 55%;
   }
+
+  div#plamemo{
+    right: 19%;
+    position: absolute;
+  }
+
+  div#plamemo{
+    top: 320%;
+    right: 25%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1240px){
+  div#plamemo {
+    top: 150%;
+    right: 30%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 438px){
+  div#plamemo{
+    right: 10%;
+    top: 250%;
+  }
+}
