@@ -22,6 +22,26 @@ html,body{
     src: url(./Uni\ Sans\ Heavy.otf);
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141618;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7289da;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8da5fc;
+}
+
 img#pfp{
     border-radius: 50%;
     position: absolute;
