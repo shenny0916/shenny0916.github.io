@@ -13,13 +13,50 @@ html,body{
 }
 
 .fill_page{
-  height: 300%;
+  height: 100%;
   background-color: #23272a;
 }
 
 @font-face {
     font-family: discord;
     src: url(./Uni\ Sans\ Heavy.otf);
+}
+
+.btns{
+  position: absolute;
+  top: 50%;
+
+  height: 100%;
+  right: 2.5%;
+  width: 95%;
+  background-color: transparent;
+}
+
+.btns a{
+  text-decoration: none;
+  background-color: transparent;
+  color: #7289da;
+  font-size: 100px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.btns a:hover{
+  text-decoration: none;
+  color: #5573dd;
+}
+
+.btns a#invite{
+  top: 25%;
+  width: 100%;
+  position: absolute;
+}
+
+.btns a#server{
+  top: 0%;
+  width: 100%;
+  position: absolute;
 }
 
 /* width */
@@ -48,47 +85,8 @@ img#pfp{
     height: 300px;
     width: 300px;
 
-    right: 41%;
+    right: 39%;
     top: 3%;
-}
-
-.button {
-    border-radius: 10px;
-    opacity: 0.5;
-}
-
-a#b1:hover {
-    text-decoration: none;
-    border-radius: 10px;
-    opacity: 1;
-}
-
-a#b2:hover {
-    text-decoration: none;
-    border-radius: 10px;
-    opacity: 1;
-}
-
-a#b2{
-    z-index: 11;
-    right: 42%;
-    top: 80%;
-    position: absolute;
-    font-size: 70px;
-    color: #7289da;
-}
-
-a#b1{
-    z-index: 11;
-    right: 44%;
-    top: 60%;
-    position: absolute;
-    font-size: 70px;
-    color: #7289da;
-}
-
-a{
-  text-decoration: none;
 }
 
 .move-right-disCat{
@@ -106,7 +104,7 @@ a{
     position: absolute;
     width: 95%;
     left: 2.5%;
-    height: 50%;
+    height: 150%;
     top: 110%;
 }
 
@@ -148,16 +146,6 @@ a{
 
   img#pfp{
     right: 20%;
-  }
-
-   a#b2{
-    right: 22%;
-    top: 85%;
-  }
-
-  a#b1{
-    right: 28%;
-    top: 65%;
   }
 }
 
