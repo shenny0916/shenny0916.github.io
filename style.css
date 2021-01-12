@@ -142,10 +142,155 @@ img#pfp{
     background-color: transparent;
 }
 
+@keyframes move-right-checkmark{
+  0%   {width: 15%;}
+  100%   {width: 25%;}
+}
+
+div#menu_checkmark:hover{
+  animation-name: move-right-checkmark;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+  width: 25%;
+  background-color: rgb(240, 38, 38);
+}
+
+div#menu_checkmark{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100px;
+  width: 15%;
+  background-color: rgb(219, 69, 69);
+  border-radius: 0px 10px 10px 0px;
+}
+
+@keyframes move-right-and-show-menu{
+  0%    {width: 0%;}
+  100%  {width: 90%;}
+}
+
+.move-right-and-show-menu{
+  animation-name: move-right-and-show-menu;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-left-and-hide-menu{
+  0%    {width: 90%;}
+  100%  {width: 0%;}
+}
+
+.move-left-and-hide-menu{
+  animation-name: move-left-and-hide-menu;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes invis{
+  0%    {opacity: 1;}
+  100%  {opacity: 0;}
+}
+
+.invis{
+  animation-name: invis;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes vis{
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+.vis{
+  animation-name: vis;
+  animation-duration: 1.999s;
+  animation-iteration-count: 1;
+}
+
+div.menu{
+  width: 90%;
+  height: 260%;
+  position: absolute;
+  background-color: #2c2f33;
+  top: 0px;
+  left: 0px;
+
+  z-index: 1111;
+
+  visibility: hidden;
+}
+
+div.menu img#menu_bg{
+  position: absolute;
+  width: 95%;
+  height: 33%;
+  top: 3%;
+  left: 2.5%;
+  background-size: cover;
+  background-color: transparent;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+div.menu div.options{
+  position: absolute;
+  top: 40%;
+  background-color: #2c2f33;
+  width: 95%;
+  opacity: 1;
+}
+
+div.menu div.options h1{
+  margin: 20px;
+  background-color: #23272a;
+  font-size: 100px;
+  border-radius: 10px;
+  color: white;
+  left: 2.5%;
+}
+
+div.menu div.options h1#home{
+  color: rgb(219, 69, 69);
+}
+
+.commands_page{
+  visibility: hidden;
+}
+
+.home_page{
+  visibility: visible;
+}
+
+.commands h1{
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 90px;
+}
+
+.commands div h1{
+  background-color: #2c2f33;
+  color: #7289da;
+  font-size: 70px;
+  width: 100%;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 800px){
 
   img#pfp{
     right: 20%;
+  }
+
+  div.menu{
+    height: 345%;
+  }
+
+  div.menu div.options h1{
+    font-size: 70px;
   }
 }
 
