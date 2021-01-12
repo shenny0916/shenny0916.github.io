@@ -9,7 +9,7 @@ function changePage(num){
         document.getElementById('commands').style.color = 'white'
 
         document.getElementsByClassName('home_page')[0].style.visibility = 'visible'
-        document.getElementsByClassName('commands_page')[0].style.visibility = 'visible'
+        document.getElementsByClassName('commands_page')[0].style.visibility = 'hidden'
     } else
 
     if(num === 2){
