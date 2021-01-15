@@ -212,7 +212,7 @@ div#menu_checkmark{
 
 div.menu{
   width: 90%;
-  height: 280%;
+  height: 880%;
   position: absolute;
   background-color: #2c2f33;
   top: 0px;
@@ -223,11 +223,11 @@ div.menu{
   visibility: hidden;
 }
 
-div.menu img#menu_bg{
+div.menu #menu_bg img{
   position: absolute;
   width: 95%;
-  height: 33%;
-  top: 3%;
+  height: 12%;
+  top: 0.5%;
   left: 2.5%;
   background-size: cover;
   background-color: transparent;
@@ -237,7 +237,7 @@ div.menu img#menu_bg{
 
 div.menu div.options{
   position: absolute;
-  top: 40%;
+  top: 13%;
   background-color: #2c2f33;
   width: 95%;
   opacity: 1;
@@ -258,33 +258,34 @@ div.menu div.options h1#home{
 
 .commands_page{
   visibility: hidden;
-  height: 0px;
+  position: absolute;
+  top: 10%;
+  width: 70%;
+  right: 15%;
 }
 
 .home_page{
   visibility: visible;
 }
 
-/* .commands h1{
-  color: white;
-  align-items: center;
-  text-align: center;
-  font-size: 90px;
-}
-
-.commands div h1{
-  background-color: #2c2f33;
-  color: #7289da;
-  font-size: 70px;
-  width: 100%;
-  border-radius: 10px;
-} */
-
-.commands div h1{
+.commands div h1 {
   background-color: #2c2f33;
   margin-top: 0px;
   margin-bottom: 0px;
   color: #7289da;
+  font-size: 35px;
+}
+
+.commands div#event h1{
+  border-radius: 10px;
+}
+
+.commands div h1#top{
+  border-radius: 10px 10px 0px 0px;
+}
+
+.commands div h1#bot{
+  border-radius: 0px 0px 10px 10px;
 }
 
 .commands div h2{
@@ -334,5 +335,11 @@ div.menu div.options h1#home{
 @media only screen and (max-width: 344px){
   div.menu div.options h1{
     font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 545px){
+  .commands div h1{
+    font-size: 30px;
   }
 }

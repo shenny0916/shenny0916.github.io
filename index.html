@@ -11,7 +11,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<body>
+<body onload="scrollToTop()">
   <script src="./index.js"></script>
 
   <meta name="description" content="A bot based on the anime character Isla from plastic memories,with over 100 commands to use.">
@@ -23,7 +23,11 @@
   <div id="menu_checkmark" onclick="menu('open')"></div>
 
   <div class="menu">
-    <img id="menu_bg" src="https://coolwallpapers.me/picsup/2970170-plastic-memories-anime-girls-isla-kinushima-michiru___anime-wallpapers.jpg">
+    <picture id="menu_bg">
+      <!-- <source media="(max-width:750px)" srcset="https://i.pinimg.com/originals/0d/87/6c/0d876c5a75248e8a9acb15aa03d307ff.jpg"> -->
+
+      <img src="https://cdn.discordapp.com/attachments/797324731522088970/798950104219648038/20210113_051439.jpg">
+    </picture>
 
     <div class="options">
       <h1 onclick="changePage(1)" id="home">Home</h1>
@@ -38,29 +42,29 @@
       <div id="anime">
       <h2>Anime</h2>
 
-        <h1>Anime</h1>
+        <h1 id="top">Anime</h1>
         <h1>Einfo</h1>
         <h1>Ainfo</h1>
         <h1>Animeme</h1>
         <h1>Astats</h1>
         <h1>Arecommend</h1>
-        <h1>Asearch</h1>
+        <h1 id="bot">Asearch</h1>
       </div>
 
       <div id="mod">
       <h2>Moderation</h2>
-        <h1>Kick</h1>
+        <h1 id="top">Kick</h1>
         <h1>Ban</h1>
         <h1>Mute</h1>
         <h1>Warn</h1>
         <h1>Unban</h1>
         <h1>Warnings</h1>
-        <h1>Unwarn</h1>
+        <h1 id="bot">Unwarn</h1>
       </div>
 
       <div id="utility">
       <h2>Utility</h2>
-        <h1>Info</h1>
+        <h1 id="top">Info</h1>
         <h1>Support</h1>
         <h1>Serverinfo</h1>
         <h1>Whois</h1>
@@ -79,12 +83,12 @@
         <h1>Afk</h1>
         <h1>Rr</h1>
         <h1>Ar</h1>
-        <h1>Boost</h1>
+        <h1 id="bot">Boost</h1>
       </div>
 
       <div id="media">
       <h2>Media</h2>
-        <h1>Pat</h1>
+        <h1 id="top">Pat</h1>
         <h1>Askwall</h1>
         <h1>Batslap</h1>
         <h1>Changemymind</h1>
@@ -121,12 +125,12 @@
         <h1>Search</h1>
         <h1>Kiss</h1>
         <h1>Lc</h1>
-        <h1>Error</h1>
+        <h1 id="bot">Error</h1>
       </div>
 
       <div id="fun">
       <h2>Fun</h2>
-        <h1>Emoji</h1>
+        <h1 id="top">Emoji</h1>
         <h1>Emojisearch</h1>
         <h1>Throw</h1>
         <h1>Ifiwasamod</h1>
@@ -160,7 +164,7 @@
         <h1>Howgay</h1>
         <h1>Ship</h1>
         <h1>Rps</h1>
-        <h1>Pretty</h1>
+        <h1 id="bot">Pretty</h1>
       </div>
 
       <div id="event">
@@ -170,7 +174,7 @@
 
       <div id="music">
       <h2>Music</h2>
-        <h1>play</h1>
+        <h1 id="top">play</h1>
         <h1>stop</h1>
         <h1>skip</h1>
         <h1>pause</h1>
@@ -178,15 +182,15 @@
         <h1>queue</h1>
         <h1>shuffle</h1>
         <h1>qloop</h1>
-        <h1>sloop</h1>
+        <h1 id="bot">sloop</h1>
       </div>
 
       <div id="economy">
       <h2>Economy</h2>
-        <h1>signup</h1>
+        <h1 id="top">signup</h1>
         <h1>profile</h1>
         <h1>claim</h1>
-        <h1>retrieve</h1>
+        <h1 id="bot">retrieve</h1>
       </div>
     </div>
   </div>
@@ -224,7 +228,10 @@
 </body>
 
 <script>
-let running = false
+function scrollToTop(){
+  window.scrollTo(10,10)
+}
+
 window.addEventListener('scroll', function(){
     var scrollpos = window.scrollY;
     var wh = window.innerHeight;
@@ -233,7 +240,6 @@ window.addEventListener('scroll', function(){
     if(scrollpos + (wh / 2) + (wh / 4) > wh){
         element.classList.add("move-right-disCat");
 
-        running = true
         setTimeout(() => {
 
         }, 1000);
