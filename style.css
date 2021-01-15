@@ -104,7 +104,7 @@ img#pfp{
     position: absolute;
     width: 95%;
     left: 2.5%;
-    height: 150%;
+    height: 100%;
     top: 110%;
 }
 
@@ -212,7 +212,7 @@ div#menu_checkmark{
 
 div.menu{
   width: 90%;
-  height: 260%;
+  height: 280%;
   position: absolute;
   background-color: #2c2f33;
   top: 0px;
@@ -258,13 +258,14 @@ div.menu div.options h1#home{
 
 .commands_page{
   visibility: hidden;
+  height: 0px;
 }
 
 .home_page{
   visibility: visible;
 }
 
-.commands h1{
+/* .commands h1{
   color: white;
   align-items: center;
   text-align: center;
@@ -277,6 +278,28 @@ div.menu div.options h1#home{
   font-size: 70px;
   width: 100%;
   border-radius: 10px;
+} */
+
+.commands div h1{
+  background-color: #2c2f33;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #7289da;
+}
+
+.commands div h2{
+  background-color: #7289da;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+  color: #afbbe6;
+  font-size: 50px;
+  width: min-content;
+}
+
+.commands{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 800px){
@@ -292,5 +315,24 @@ div.menu div.options h1#home{
   div.menu div.options h1{
     font-size: 70px;
   }
+
+  .commands h1{
+    font-size: 60px;
+  }
+
+  .commands div h1{
+    font-size: 50px;
+  }
 }
 
+@media only screen and (max-width: 482px){
+  div.menu div.options h1{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 344px){
+  div.menu div.options h1{
+    font-size: 40px;
+  }
+}

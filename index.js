@@ -51,7 +51,7 @@ function menu(op){
         setTimeout(() => {
             document.getElementsByClassName('options')[0].classList.remove('invis')
             document.getElementsByClassName('options')[0].style.opacity = '0'
-        }, 500);
+        }, 400);
 
         menu.classList.add('move-left-and-hide-menu')
         running = true
