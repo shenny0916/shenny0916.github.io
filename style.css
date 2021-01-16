@@ -89,7 +89,7 @@ img#pfp{
     margin-left: -150px; /* Half the width */
     border-radius: 50%;
 
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px #0b0b0c;
 }
 
 .move-right-disCat{
@@ -135,7 +135,7 @@ img#pfp{
   position: absolute;
 } */
 
-.content .desc h1 strong{
+.content .desc h1 strong#title{
     position: relative;
     text-align: center;
     align-items: center;
@@ -145,17 +145,41 @@ img#pfp{
     background-color: transparent;
 }
 
-@keyframes move-right-checkmark{
-  0%   {width: 15%;}
-  100%   {width: 25%;}
+.content .desc h1 img{
+  height: 400px;
+  min-width: 400px;
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content .desc div#roles{
+  height: 400px;
+  min-width: 400px;
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px black;
+  background-color: transparent;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.content .desc div#roles h1{
+  font-size: 60px;
+}
+
+.content .desc h1 strong#highlight{
+  font-family: discord;
+  font-size: 30px;
+  color: #7289da;
+  background-color: rgb(19, 18, 18);
+  border-radius: 10px;
 }
 
 div#menu_checkmark:hover{
-  animation-name: move-right-checkmark;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-
-  width: 25%;
   background-color: rgb(240, 38, 38);
 }
 
@@ -209,7 +233,7 @@ div#menu_checkmark{
 
 .vis{
   animation-name: vis;
-  animation-duration: 1.999s;
+  animation-duration: 3.5s;
   animation-iteration-count: 1;
 }
 
@@ -229,7 +253,7 @@ div.menu{
 div.menu #menu_bg img{
   position: absolute;
   width: 95%;
-  height: 12%;
+  height: 480px;
   top: 0.5%;
   left: 2.5%;
   background-size: cover;
@@ -240,7 +264,7 @@ div.menu #menu_bg img{
 
 div.menu div.options{
   position: absolute;
-  top: 13%;
+  top: 520px;
   background-color: #2c2f33;
   width: 95%;
   opacity: 1;
@@ -319,10 +343,6 @@ div.menu div.options h1#home{
 }
 
 @media only screen and (max-width: 800px){
-
-  img#pfp{
-    right: 20%;
-  }
 
   div.menu{
     height: 345%;

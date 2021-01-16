@@ -85,16 +85,16 @@ function menu(op){
         menu.classList.add('move-right-and-show-menu')
 
         setTimeout(() => {
-        running = false
         menu.classList.remove('move-right-and-show-menu')
         }, 2000);
 
         document.getElementsByClassName('options')[0].classList.add('vis')
 
         setTimeout(() => {
+            running = false
             document.getElementsByClassName('options')[0].classList.remove('vis')
             document.getElementsByClassName('options')[0].style.opacity = '1'
-        }, 1999);
+        }, 3500);
     } else {
         if(running === true) return;
 
