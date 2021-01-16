@@ -80,13 +80,16 @@ html,body{
 }
 
 img#pfp{
-    border-radius: 50%;
     position: absolute;
-    height: 300px;
+    top: 25%;
+    left: 50%;
     width: 300px;
+    height: 300px;
+    margin-top: -150px; /* Half the height */
+    margin-left: -150px; /* Half the width */
+    border-radius: 50%;
 
-    right: 39%;
-    top: 3%;
+    box-shadow: 0px 0px 20px black;
 }
 
 .move-right-disCat{
@@ -212,7 +215,7 @@ div#menu_checkmark{
 
 div.menu{
   width: 90%;
-  height: 880%;
+  height: 0%;
   position: absolute;
   background-color: #2c2f33;
   top: 0px;
@@ -273,7 +276,9 @@ div.menu div.options h1#home{
   margin-top: 0px;
   margin-bottom: 0px;
   color: #7289da;
-  font-size: 35px;
+
+  /* font-size: 35px; */
+  font-size: 0px;
 }
 
 .commands div#event h1{
@@ -294,8 +299,18 @@ div.menu div.options h1#home{
   margin-bottom: 0px;
   border-radius: 10px 10px 0px 0px;
   color: #afbbe6;
-  font-size: 50px;
   width: min-content;
+
+  /* font-size: 50px; */
+  font-size: 0px;
+}
+
+.commands div h2:hover{
+  color: #899ef1;
+}
+
+.commands div h1:hover{
+  color: #95a4dd;
 }
 
 .commands{
@@ -317,13 +332,9 @@ div.menu div.options h1#home{
     font-size: 70px;
   }
 
-  .commands h1{
-    font-size: 60px;
-  }
-
-  .commands div h1{
+  /* .commands div h1{
     font-size: 50px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 482px){
@@ -338,8 +349,8 @@ div.menu div.options h1#home{
   }
 }
 
-@media only screen and (max-width: 545px){
+/* @media only screen and (max-width: 545px){
   .commands div h1{
     font-size: 30px;
   }
-}
+} */
